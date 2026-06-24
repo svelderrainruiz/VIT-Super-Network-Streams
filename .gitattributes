@@ -1,0 +1,5 @@
+# Let git auto-detect text vs binary by content and normalize text to LF in the
+# repository. Binary formats (LabVIEW .vi/.ctl, the zip-based VIPM .vipc, images,
+# etc.) contain NUL bytes, so git detects them automatically and never applies
+# line-ending conversion — they do not need to be listed here.
+* text=auto
