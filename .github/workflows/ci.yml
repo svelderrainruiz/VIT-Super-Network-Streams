@@ -106,9 +106,9 @@ jobs:
           vipm --version
 
       - name: Install git for actions/checkout
-        # git is required for the actions/checkout step, but is not included in the base LabVIEW image.                                                                         
+        # git is required for the actions/checkout step, but is not included in the bas                                       
+      - name: Checkout code                                                            e LabVIEW image.                                                                         
         run: apt-get update && apt-get install -y git                                                                         
-      - name: Checkout code                                                                                                   
         uses: actions/checkout@v6
 
         # This is a reusable script to set up the display for VIPM and LabVIEW.
@@ -138,7 +138,7 @@ jobs:
         with:
           path: /usr/local/jki/vipm/cache/
           # Key includes hashes of the project package manifests (.vipc and .dragon files)
-          key: vipm-v${{ env.CACHE_VERSION }}-${{ runner.os }}-${{ env.LABVIEW_IMAGE }}-${{ env.VIPM_RELEASE_TYPE }}-${{ env.VIPM_VERSION }}-${{ hashFiles('source/.vipc', 'error.dragon') }}
+          key: vipm-v${{ env.CACHE_VERSION }}-${{ runner.os }}-${{ env.LABVIEW_IMAGE }}-${{ env.VIPM_RELEASE_TYPE }}-${{ env.VIPM_VERSION }}-${{ hashFiles('src/.vipc', 'error.dragon') }}
           restore-keys: |
             vipm-v${{ env.CACHE_VERSION }}-${{ runner.os }}-${{ env.LABVIEW_IMAGE }}-${{ env.VIPM_RELEASE_TYPE }}-${{ env.VIPM_VERSION }}-
             vipm-v${{ env.CACHE_VERSION }}-${{ runner.os }}-${{ env.LABVIEW_IMAGE }}-${{ env.VIPM_RELEASE_TYPE }}-
@@ -151,18 +151,18 @@ jobs:
         # we will refresh before building the package
         if: true
         run: |
-          source setup-display.sh
+          src setup-display.sh
           echo "Starting LabVIEW"
           /usr/local/natinst/LabVIEW-${LABVIEW_VERSION_YEAR}-64/labview --headless &
 
           vipm refresh --show-progress --verbose
 
       - name: VIPM List Packages
-        run: vipm list source/.vipc
+        run: vipm list src/.vipc
 
       - name: VIPM Install Packages
         run: |
-          source setup-display.sh
+          src setup-display.sh
           echo "Starting LabVIEW"
           /usr/local/natinst/LabVIEW-${LABVIEW_VERSION_YEAR}-64/labview --headless &
           
@@ -170,11 +170,11 @@ jobs:
 
       - name: VIPM Build Package
         run: |
-          source setup-display.sh
+          src setup-display.sh
           echo "Starting LabVIEW"
           /usr/local/natinst/LabVIEW-${LABVIEW_VERSION_YEAR}-64/labview --headless &
 
-          vipm build source/.vipb --labview-version ${LABVIEW_VERSION_YEAR} --labview-bitness 64 --show-progress --verbose
+          vipm build src/.vipb --labview-version ${LABVIEW_VERSION_YEAR} --labview-bitness 64 --show-progress --verbose
 
       - name: Upload Built Package as Artifact
         if: true
