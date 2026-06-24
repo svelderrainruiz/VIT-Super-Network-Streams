@@ -41,8 +41,7 @@ jobs:
           echo running pylavi tests
           source .venv/bin/activate
           vi_validate \
-            --path source \
-            --path tests \
+            --path src \
             --gt 20 --lt 21 \
             --skip *.vit \
             --no-code \
