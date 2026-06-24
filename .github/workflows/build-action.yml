@@ -61,7 +61,7 @@ jobs:
           path: src                 # auto-finds src/.vipb
           refresh: 'true'
           install: |
-            error.dragon
+            VITSuperNetworkStreams.dragon
           output_directory: dist
           # LabVIEW version is auto-detected from the container (2026).
           vipm_release_type: preview    # VIPM Linux builds ship on the preview channel

@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="20008000">
 	<Property Name="CCSymbols" Type="Str"></Property>
+	<Property Name="NI.LV.All.SaveVersion" Type="Str">20.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -23,23 +24,23 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Examples" Type="Folder">
-			<Item Name="Basic ReadWrite.vi" Type="VI" URL="../Examples/Basic ReadWrite.vi"/>
-			<Item Name="CmdReader with Context.vi" Type="VI" URL="../Examples/CmdReader with Context.vi"/>
-			<Item Name="CmdReader.vi" Type="VI" URL="../Examples/CmdReader.vi"/>
-			<Item Name="CmdWriter with Context.vi" Type="VI" URL="../Examples/CmdWriter with Context.vi"/>
-			<Item Name="CmdWriter.vi" Type="VI" URL="../Examples/CmdWriter.vi"/>
-			<Item Name="WaveformReader.vi" Type="VI" URL="../Examples/WaveformReader.vi"/>
-			<Item Name="WaveformWriter.vi" Type="VI" URL="../Examples/WaveformWriter.vi"/>
+			<Item Name="Basic ReadWrite.vi" Type="VI" URL="../src/Examples/Basic ReadWrite.vi"/>
+			<Item Name="CmdReader with Context.vi" Type="VI" URL="../src/Examples/CmdReader with Context.vi"/>
+			<Item Name="CmdReader.vi" Type="VI" URL="../src/Examples/CmdReader.vi"/>
+			<Item Name="CmdWriter with Context.vi" Type="VI" URL="../src/Examples/CmdWriter with Context.vi"/>
+			<Item Name="CmdWriter.vi" Type="VI" URL="../src/Examples/CmdWriter.vi"/>
+			<Item Name="WaveformReader.vi" Type="VI" URL="../src/Examples/WaveformReader.vi"/>
+			<Item Name="WaveformWriter.vi" Type="VI" URL="../src/Examples/WaveformWriter.vi"/>
 		</Item>
-		<Item Name="SuperNS.lvclass" Type="LVClass" URL="../SuperNS/SuperNS.lvclass"/>
-		<Item Name="WfmData.lvclass" Type="LVClass" URL="../WaveFormData/WfmData.lvclass"/>
-		<Item Name="MsgData.lvclass" Type="LVClass" URL="../MsgData/MsgData.lvclass"/>
-		<Item Name="VariantCmd.lvclass" Type="LVClass" URL="../VariantCmds/VariantCmd.lvclass"/>
+		<Item Name="SuperNS.lvclass" Type="LVClass" URL="../src/SuperNS/SuperNS.lvclass"/>
+		<Item Name="WfmData.lvclass" Type="LVClass" URL="../src/WaveFormData/WfmData.lvclass"/>
+		<Item Name="MsgData.lvclass" Type="LVClass" URL="../src/MsgData/MsgData.lvclass"/>
+		<Item Name="VariantCmd.lvclass" Type="LVClass" URL="../src/VariantCmds/VariantCmd.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="Flush And Wait Empty Condition.ctl" Type="VI" URL="/&lt;vilib&gt;/dex/Flush And Wait Empty Condition.ctl"/>
 				<Item Name="Stream Element Allocation Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/dex/Stream Element Allocation Mode.ctl"/>
+				<Item Name="Flush And Wait Empty Condition.ctl" Type="VI" URL="/&lt;vilib&gt;/dex/Flush And Wait Empty Condition.ctl"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="subSigGeneratorBlock.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/subSigGeneratorBlock.vi"/>
@@ -96,10 +97,10 @@
 				<Property Name="Source[0].itemID" Type="Str">{11A3929E-1B4E-4219-8F02-27C2F89C07A0}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref"></Property>
+				<Property Name="Source[1].itemID" Type="Ref">/</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref"></Property>
+				<Property Name="Source[2].itemID" Type="Ref">/</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
@@ -140,13 +141,13 @@
 				<Property Name="Source[0].itemID" Type="Str">{11A3929E-1B4E-4219-8F02-27C2F89C07A0}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref"></Property>
+				<Property Name="Source[1].itemID" Type="Ref">/</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref"></Property>
+				<Property Name="Source[2].itemID" Type="Ref">/</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref"></Property>
+				<Property Name="Source[3].itemID" Type="Ref">/</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">4</Property>
