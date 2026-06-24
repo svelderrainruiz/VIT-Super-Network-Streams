@@ -137,7 +137,7 @@ jobs:
         with:
           path: /usr/local/jki/vipm/cache/
           # Key includes hashes of the project package manifests (.vipc and .dragon files)
-          key: vipm-v${{ env.CACHE_VERSION }}-${{ runner.os }}-${{ env.LABVIEW_IMAGE }}-${{ env.VIPM_RELEASE_TYPE }}-${{ env.VIPM_VERSION }}-${{ hashFiles('source/.vipc', 'error.dragon') }}
+          key: vipm-v${{ env.CACHE_VERSION }}-${{ runner.os }}-${{ env.LABVIEW_IMAGE }}-${{ env.VIPM_RELEASE_TYPE }}-${{ env.VIPM_VERSION }}-${{ hashFiles('src/.vipc', 'error.dragon') }}
           restore-keys: |
             vipm-v${{ env.CACHE_VERSION }}-${{ runner.os }}-${{ env.LABVIEW_IMAGE }}-${{ env.VIPM_RELEASE_TYPE }}-${{ env.VIPM_VERSION }}-
             vipm-v${{ env.CACHE_VERSION }}-${{ runner.os }}-${{ env.LABVIEW_IMAGE }}-${{ env.VIPM_RELEASE_TYPE }}-
@@ -165,7 +165,7 @@ jobs:
           echo "Starting LabVIEW"
           /usr/local/natinst/LabVIEW-${LABVIEW_VERSION_YEAR}-64/labview --headless &
           
-          vipm install error.dragon --show-progress --verbose --labview-version ${LABVIEW_VERSION_YEAR} --labview-bitness 64
+          vipm install VITSuperNetworkStreams.dragon --show-progress --verbose --labview-version ${LABVIEW_VERSION_YEAR} --labview-bitness 64
 
       - name: VIPM Build Package
         run: |

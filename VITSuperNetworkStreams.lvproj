@@ -24,19 +24,49 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Examples" Type="Folder">
-			<Item Name="Basic ReadWrite.vi" Type="VI" URL="../Examples/Basic ReadWrite.vi"/>
-			<Item Name="CmdReader with Context.vi" Type="VI" URL="../Examples/CmdReader with Context.vi"/>
-			<Item Name="CmdReader.vi" Type="VI" URL="../Examples/CmdReader.vi"/>
-			<Item Name="CmdWriter with Context.vi" Type="VI" URL="../Examples/CmdWriter with Context.vi"/>
-			<Item Name="CmdWriter.vi" Type="VI" URL="../Examples/CmdWriter.vi"/>
-			<Item Name="WaveformReader.vi" Type="VI" URL="../Examples/WaveformReader.vi"/>
-			<Item Name="WaveformWriter.vi" Type="VI" URL="../Examples/WaveformWriter.vi"/>
+			<Item Name="Basic ReadWrite.vi" Type="VI" URL="../src/Examples/Basic ReadWrite.vi"/>
+			<Item Name="CmdReader with Context.vi" Type="VI" URL="../src/Examples/CmdReader with Context.vi"/>
+			<Item Name="CmdReader.vi" Type="VI" URL="../src/Examples/CmdReader.vi"/>
+			<Item Name="CmdWriter with Context.vi" Type="VI" URL="../src/Examples/CmdWriter with Context.vi"/>
+			<Item Name="CmdWriter.vi" Type="VI" URL="../src/Examples/CmdWriter.vi"/>
+			<Item Name="WaveformReader.vi" Type="VI" URL="../src/Examples/WaveformReader.vi"/>
+			<Item Name="WaveformWriter.vi" Type="VI" URL="../src/Examples/WaveformWriter.vi"/>
 		</Item>
-		<Item Name="SuperNS.lvclass" Type="LVClass" URL="../SuperNS/SuperNS.lvclass"/>
-		<Item Name="WfmData.lvclass" Type="LVClass" URL="../WaveFormData/WfmData.lvclass"/>
-		<Item Name="MsgData.lvclass" Type="LVClass" URL="../MsgData/MsgData.lvclass"/>
-		<Item Name="VariantCmd.lvclass" Type="LVClass" URL="../VariantCmds/VariantCmd.lvclass"/>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="SuperNS.lvclass" Type="LVClass" URL="../src/SuperNS/SuperNS.lvclass"/>
+		<Item Name="WfmData.lvclass" Type="LVClass" URL="../src/WaveFormData/WfmData.lvclass"/>
+		<Item Name="MsgData.lvclass" Type="LVClass" URL="../src/MsgData/MsgData.lvclass"/>
+		<Item Name="VariantCmd.lvclass" Type="LVClass" URL="../src/VariantCmds/VariantCmd.lvclass"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Stream Element Allocation Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/dex/Stream Element Allocation Mode.ctl"/>
+				<Item Name="Flush And Wait Empty Condition.ctl" Type="VI" URL="/&lt;vilib&gt;/dex/Flush And Wait Empty Condition.ctl"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="subSigGeneratorBlock.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/subSigGeneratorBlock.vi"/>
+				<Item Name="Nearest Frequency for Block.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalConfig.llb/Nearest Frequency for Block.vi"/>
+				<Item Name="Nearest Freq in Int Cycles.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalConfig.llb/Nearest Freq in Int Cycles.vi"/>
+				<Item Name="subInternalTiming.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/subInternalTiming.vi"/>
+				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="subShouldUseDefSigName.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/subShouldUseDefSigName.vi"/>
+				<Item Name="sub2ShouldUseDefSigName.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/sub2ShouldUseDefSigName.vi"/>
+				<Item Name="subGetSignalName.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/subGetSignalName.vi"/>
+				<Item Name="ex_GenAddAttribs.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/SimulateSignalBlock.llb/ex_GenAddAttribs.vi"/>
+				<Item Name="ex_WaveformAttribsPlus.ctl" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_WaveformAttribsPlus.ctl"/>
+				<Item Name="Timestamp Subtract.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Subtract.vi"/>
+				<Item Name="I128 Timestamp.ctl" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/I128 Timestamp.ctl"/>
+				<Item Name="DU64_U32SubtractWithBorrow.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/DU64_U32SubtractWithBorrow.vi"/>
+				<Item Name="ex_SetExpAttribsAndT0.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_SetExpAttribsAndT0.vi"/>
+				<Item Name="ex_WaveformAttribs.ctl" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_WaveformAttribs.ctl"/>
+				<Item Name="Timestamp Add.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Add.vi"/>
+				<Item Name="DU64_U32AddWithOverflow.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/DU64_U32AddWithOverflow.vi"/>
+				<Item Name="ex_SetAllExpressAttribs.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/ex_SetAllExpressAttribs.vi"/>
+				<Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
+				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
+			</Item>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Reader" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
