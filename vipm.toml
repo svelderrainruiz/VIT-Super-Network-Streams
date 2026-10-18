@@ -14,4 +14,4 @@ repository = "https://github.com/svelderrainruiz/vit-super-network-streams"
 
 [build.package]
 type = "vipb"
-path = "src/.vipb"
+path = "src/vi_technologies_lib_super_network_streams.vipb"
