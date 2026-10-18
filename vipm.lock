@@ -3,7 +3,7 @@
 
 version = 2
 revision = 0
-updated-at = "2026-10-18T11:34:57.195489Z"
-requires-labview = "2024"
+updated-at = "2026-10-18T12:56:40.194842400Z"
+requires-labview = "2020"
 labview-bitness = 64
 package = []
