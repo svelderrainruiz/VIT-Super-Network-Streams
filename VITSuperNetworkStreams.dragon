@@ -1,0 +1,9 @@
+[project]
+labview-version = 2020
+vipc = 'src\.vipc'
+
+[nipm]
+
+[vipm]
+
+[vipm.dependencies]
