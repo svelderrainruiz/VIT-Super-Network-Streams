@@ -36,6 +36,9 @@
 		<Item Name="WfmData.lvclass" Type="LVClass" URL="../src/WaveFormData/WfmData.lvclass"/>
 		<Item Name="MsgData.lvclass" Type="LVClass" URL="../src/MsgData/MsgData.lvclass"/>
 		<Item Name="VariantCmd.lvclass" Type="LVClass" URL="../src/VariantCmds/VariantCmd.lvclass"/>
+		<Item Name="Package Dependencies" Type="IIO Ladder Diagram">
+			<Property Name="NI.SortType" Type="Int">0</Property>
+		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Stream Element Allocation Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/dex/Stream Element Allocation Mode.ctl"/>

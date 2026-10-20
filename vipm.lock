@@ -3,8 +3,8 @@
 
 version = 2
 revision = 0
-updated-at = "2026-10-19T14:08:01.717969100Z"
-requires-labview = "2020"
+updated-at = "2026-10-20T13:10:47.274190300Z"
+requires-labview = "2024"
 labview-bitness = 64
 
 [[nipm.feed]]
