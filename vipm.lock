@@ -3,7 +3,7 @@
 
 version = 2
 revision = 0
-updated-at = "2026-10-20T06:20:07.468241100Z"
+updated-at = "2026-10-20T13:23:25.209382Z"
 requires-labview = "2024"
 labview-bitness = 64
 
@@ -122,10 +122,6 @@ uri = "https://download.ni.com/support/nipkg/products/ni-v/ni-visa/26.0/released
 [[nipm.feed]]
 name = "nipm"
 uri = "https://download.ni.com/support/nipkg/products/ni-package-manager/released"
-
-[[vipm.repo]]
-name = "Local"
-uri = "Local"
 
 [[package]]
 name = "ni-euladepot"
@@ -779,13 +775,3 @@ feed = "ni-visa-2026 Q1-released"
 architecture = "windows_all"
 checksum = "sha256:8cbd0a420e8a39c27c31cf7e1f374969ac6a98b615374bef59ffd70767cf3333"
 uri = "https://download.ni.com/support/nipkg/pool/ni-s/ni-securityupdate-kb67l8lcqw-killbits/2.1.0/2.1.0.49154-0+f2/ni-securityupdate-kb67l8lcqw-killbits_2.1.0.49154-0+f2_windows_all.nipkg"
-
-[[package]]
-name = "vi_technologies_lib_super_network_streams"
-version = "2.0.0.20"
-manager = "vipm"
-resolution-source = "installed"
-
-[[package.source]]
-repo = "Local"
-checksum = "sha256:4774da94f4b4a4a1fe37c7e5ccdde828aec7cdddbdf1d374331b60876bf3d761"

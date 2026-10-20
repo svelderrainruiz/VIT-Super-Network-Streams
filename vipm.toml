@@ -9,13 +9,12 @@ license = "MIT"
 repository = "https://github.com/vitechnologies/vit-super-network-streams"
 
 [dependencies]
-vi_technologies_lib_super_network_streams = "2.0.0.20"
 
 [dev-dependencies]
 
 [build.package]
 type = "vipb"
-path = "vipb.vipb"
+path = "src/vipb.vipb"
 
 [nipm.dependencies]
 ni-labview-2024-coreother = "24.3.6.49154-0+f2"
